@@ -1,0 +1,675 @@
+html {
+	font-size: 14px;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	color: #2c3f55;
+	overflow-x: hidden;
+
+}
+
+ul, li {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}* {
+    -moz-transition: all 0.3s ease;
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 3.2rem;
+	font-weight: 600;
+	color: #1a283a;
+	text-align: center;
+}
+
+a, a:hover, a:active, a:focus,
+button, input, button:hover, 
+button:activ, input:focus, input:activ {
+	text-decoration: none;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+.bolder {
+	font-weight: 700;
+}
+
+.container {
+	position: relative;
+}
+
+
+
+
+#first {
+	background: url(../img/tours11.png) no-repeat center center;
+  width: 100%;
+  height: 500px;
+}
+
+#first h1 {
+	font-size: 3.6rem;
+}
+
+header {
+	background: rgba(0,0,0,0.3);
+	height: 68px;
+}
+
+.logo {
+	width: 180px;
+	height: 68px;
+}
+
+.menu {
+    margin: 16px 0px 16px 0px;
+}
+
+.menu_item__constant { 
+	display: inline;
+	float: left;
+	padding: 10px 76px;
+}
+
+.menu_item__constant:nth-child(1) {
+    padding-left: 86px;
+}
+
+.menu_item__constant a {
+	float: left;
+    color: #c3d6eb;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 60px;
+    font-size: 0.8rem;
+}
+
+.menu_item__constant a:hover {
+    background: #375e72;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu_item__constant a:active {
+    background: #375e72;
+    color: #fff;
+    text-decoration: ;
+    text-decoration-line: underline;
+}
+
+.contacts {
+	width: 180px;
+}
+
+.contacts_icon img {
+	padding: 0px 4px 6px 4px;
+}
+     
+.contacts_icon  { 
+	float: left;
+  display: inline-block;
+  margin: 26px 4px 10px 0px;
+  background: url(../img/circlephone.png) no-repeat center center/cover;
+  width: 20px;
+  height: 20px;
+}
+
+.contacts_phone {
+	font-size: 1.0rem;
+	color: #fff;
+	margin-top: 24px;
+	float: right;
+  display: inline-block;
+  padding: 0;
+} 
+
+.twice {
+	margin-top: 10px;
+}
+
+.banner h1 {
+	margin-top: 9%;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 0.15em; 
+	font-size: 3.6rem;
+}
+ 
+
+.down {
+	display: block;
+	background: url(../img/elips.png) no-repeat center center;
+	width: 45px;
+	height: 45px;
+    margin: 60px auto;
+    text-align: center;
+    color: #fff;
+}  
+
+.down i {
+	width: 30px;
+	height: 30px;
+	padding-top: 2px; 
+}
+
+/*Гамбургер*/
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+ 
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 34px;
+  right: 5px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 8;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(190, 190, 190);
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 66px;
+  left: -100%;
+  z-index: 6;
+  width: 150px;
+  height: 320px;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: rgba(190, 190, 190, 0.5);
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 22px 14px;
+  color: rgb(190, 190, 190);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.menu__item:hover {
+  background-color: #D3D3D3;
+}
+/*/Гамбургер*/
+
+#connection, #cell {
+	width: 100%;
+	height: 660px;
+	background: #f4f4f4;
+	position: relative;
+}
+
+
+#cell {
+	height: 700px;
+}
+
+
+.box, .dept, .principles {
+	width: 100%;
+	background: #fff;
+	height: 660px;
+	position: absolute;
+	z-index: 2;
+	top: -80px;
+	left: 0px;
+}
+
+.box_text {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 60px 0px 20px 0px;
+}
+
+.services_item__phone {
+	background: url(../img/phone-number.png) no-repeat left center;
+}
+
+
+.services_item__email {
+    background: url(../img/mail.png) no-repeat left center;
+}
+
+.services_item__skype {
+    background: url(../img/skype.png) no-repeat left center;
+}
+
+.services {
+	float: left;
+	display: inline-block;
+	width: 50%;
+	margin-top: 50px;
+}
+
+.services_item {
+    width: 70%;
+    padding-left: 60px;
+    margin-bottom: 50px;
+    margin-left: 120px;
+ }
+
+.services_title {
+    text-transform: uppercase;
+    font-size: 1.267rem;
+    font-weight: 800;
+     margin-bottom: 6px;
+}  
+
+.services_text {
+    font-size: 1.15rem;
+    color: #000;
+}
+
+.dept_text {
+	padding: 30px 0px;
+	font-size: 1.2rem;
+	color: #000;
+}
+
+.variants {
+    background: url(../img/variants.png) no-repeat left center;
+    padding-left: 50%;
+    width: 90%;
+    height: 200px;
+    margin: 30px auto;
+}
+
+
+.variants_text {
+    padding-top: 40px;
+    color: #000;
+    font-size: 1.05rem;
+}
+
+.tote {
+	background: url(../img/tote.png) no-repeat right center;
+    padding-right: 50%;
+    width: 90%;
+    height: 280px;
+    margin: 30px auto;  
+}
+
+.tote_text {
+    padding-top: 70px;
+    color: #000;
+    font-size: 1.05rem;
+}
+
+.princip {
+	font-size: 1.3rem;
+    color: #000;
+}
+
+.principles_text {
+	font-size: 1.2rem;
+	color: #000;
+}
+
+
+.forms {
+	float: left;
+	display: inline-block;
+	width: 38%;
+  background: #11b2f5;
+  margin-left: 5%;
+  margin-top: 32px; 
+  color: #fff;
+}
+
+.forms span {
+	font-weight: 800;
+	font-size: 1.7rem;
+}
+
+ .forms h2 {
+ 	padding-top: 0px;
+	color: #fff;
+	letter-spacing: 0.1em;
+	font-size: 1.45rem;
+	font-weight: 600;
+}
+
+input {
+    text-indent: 5px;
+    color: #fff;
+}
+
+input {
+  text-indent: 5px;
+}
+
+input::placeholder {
+	color: #fff;
+}
+
+.only {
+  margin-bottom: 20px;
+}
+
+.cons {
+	color: #fff;
+	font-size: 1.30rem;
+	letter-spacing: 0.08em;
+	margin-top: 5px;
+	font-weight: 300;
+}
+
+#consultation {
+	background:  #11b2f5 url(img/confus.png) no-repeat center center;
+    height: 660px;
+}
+
+#consultation input::placeholder {
+	color: white;
+}
+
+#consultation input {
+	padding: 10px;
+}
+
+#consultation h2 {
+	color: #fff;
+	font-weight: 700;
+    padding-top: 60px;
+}
+
+.consult {
+	color: #fff;
+	font-size: 1.55rem;
+	font-weight: 300;
+}
+
+.consult_ups {
+	background: url(../img/elips.png) no-repeat center center/contain;
+	width: 35px;
+	height: 35px;
+    margin: 50px auto;
+    text-align: center;
+    color: #fff;
+}  
+
+.consult_ups i {
+	width: 30px;
+	height: 30px;
+	padding-top: 12px; 
+} 
+
+
+
+
+#reliability {
+   background: #f4f4f4;
+   width: 100%;
+   height: 320px;
+}
+
+.principles {
+	padding-top: 30px;
+	width: 100%;
+	height: 300px;
+    background: #fff;  
+}
+
+.principles_text {
+	margin-bottom: 60px;
+}
+
+.indention_one {
+	width: 30%;
+    display: inline-block;
+    float: left;
+    font-size: 1.05rem;
+}
+
+.indention_two {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.45rem;
+    letter-spacing: 0.2em;
+    padding-top: 25px;
+    font-weight: 300;
+    color: #8B8989;
+}
+
+.indention_three {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    font-size: 2.2rem;
+    line-height: 1.25em;
+}
+
+.indention_one span {
+	font-size: 2.8rem;
+    color: #23aae2;
+}
+
+.indention_three span {
+    color: #23aae2;
+}
+
+.alacrity {
+	display: block;
+	margin-top: 180px;
+	height: 80px;
+	background: #23aae2;
+	color: #fff; 
+	padding-top: 24px;
+	font-weight: 700;
+}
+
+
+
+
+#partners {
+	width: 100%;
+	height: 860px;
+	background: #f4f4f4;
+}
+
+.part_white {
+	background: #fff;
+	width: 100%;
+	padding: 0;
+}
+
+.part { 
+	font-size: 2.2rem;
+	height: 160px;
+	padding-top: 80px;
+}
+
+.part_dubble {
+	width: 100%;
+	height: 640px; 
+	padding-top: 30px;
+}
+
+.part_name {
+    margin-bottom: 38px;
+}
+
+.part_igor, .part_victor {
+	width: 40%;
+	height: 560px;
+	display: inline-block;
+	float: left;
+	font-size: 1.05rem;
+	color: #000;
+	line-height: 1.8em;
+	margin-left: 5%;
+	text-align: justify;
+}
+
+.part_igor {
+    background: #f4f4f4 url(../img/igor-circle.png) no-repeat center 40px;
+    padding-top: 20%;
+
+}
+
+.speech_igor, .speech_victor {
+	display: block;
+    text-align: justify;
+    padding-left: 4%;
+}
+
+
+.part_victor {
+	background: #f4f4f4 url(../img/isaac-circle.png) no-repeat center 40px;
+    padding-top: 20%;
+    
+}
+
+.placeholder {
+	padding-left: 20px;
+	color: #fff;
+}
+
+
+#connection input, button {
+	display: block;
+	margin: 0 auto 8px auto;
+	width: 80%;
+    height: 60px;
+    border: 1px solid #fff;
+    background: #30c2ff;
+    color: #fff;
+    border-radius: 4px;
+}
+
+button {
+	margin-top: 10px;
+	border: 2px solid #fff;
+	border-radius: 4px;
+	font-size: 1.05rem;
+	background: none;
+	height: 46px;
+	margin-bottom: 40px;
+	width: 80%;	
+}
+
+.only {
+	width: 80%;
+}
+
+#consultation input, button {
+	display: block;
+	margin: 0 auto 8px auto;
+	width: 33%;
+    height: 60px;
+    border: 1px solid #fff;
+    background: #30c2ff;
+    color: #fff;
+    border-radius: 4px;
+}
+
+#consultation  button {
+  margin-top: 20px;
+	border: 2px solid #fff;
+	border-radius: 4px;
+	font-size: 1.05rem;
+	background: none;
+	height: 66px;
+}
+
+.logo_img {
+	display: inline-block;
+	width: 140px;
+	height: 50px;
+	margin-top: 24px;
+}
+
+.protection {
+	display: inline-block;
+	color: #fff;
+	padding-top: 40px;
+}
+
+.dialog_icon { 
+    float: left;
+    display: inline-block;
+    margin: 45px 5px;
+    background: url(../img/elips.png) no-repeat center center/cover;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+}
+
+.dialog_icon i {
+    padding-top: 6px;
+    padding-left: 8px;
+    font-weight: 100;
+   
+}
+
+.dialog_phone {
+	  font-size: 1.15rem;
+	  color: #fff;
+	  margin-top: 35px;
+    display: inline-block;
+    float: left;
+}
+
+#footer {
+	padding: 0;
+	background: #23aae2;
+}
