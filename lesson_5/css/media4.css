@@ -1,0 +1,147 @@
+/*Responsive*/
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+    	width: 960px;
+    }
+
+    .trevel {
+    	margin-left: 0px;
+    }
+
+    h2, h3, p, .topic, .tendency, .wait {
+    	width: auto;
+    }
+
+ }
+
+
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    
+    .header {
+	   background: #41a4e8;
+	   padding-top: 30px;
+	   padding-bottom: 0px;
+    }
+
+
+    .container {
+    	width: 720px;
+    }
+
+	.box {
+		flex-direction: column;
+		padding-bottom: 0px;
+	}
+
+	.topic {
+		padding-top: 50px;
+		text-align: center;
+	}
+
+	.tendency {
+		text-align: center;
+		margin: 40px auto;
+	}
+
+	.desire, {
+		width: auto;
+		margin: 40px auto;
+		text-align: center;
+	}
+
+	 .trevel {
+    	width: 90%;
+    }
+
+	.btn {
+		margin: 0 auto;
+	}
+
+}    
+	
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+
+	.container {
+    	width: 540px;
+    }
+
+	.topic {
+		letter-spacing: 0.05em;
+		font-size: 30px;
+	}
+
+	.waiting {
+		flex-direction: column;
+	}
+
+	.wait {
+		padding-bottom: 40px;
+		margin: 0 auto;
+	} 
+
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+
+	.container {
+    	width: 90%;
+    }
+
+	.topic {
+		font-size: 18px;
+	}
+
+	.order {
+	    padding-bottom: 50px;
+    }
+
+	.input, .btn {
+		width: 90%;
+		margin: 10px auto;
+	}
+
+	.input {
+        font-size: 14px;
+        padding-left: 5px;
+    }
+
+	.foot {
+		display: none;
+	}
+
+	.end {
+		display: block;
+		text-align: center;
+	}
+
+	.footer {
+		padding: 5px 35px;
+	}
+
+	.ticket {
+		padding-top: 50px;
+	}
+
+	.tendency {
+		font-size: 16px;
+		width: 300px;
+	}
+
+    .future {
+	    padding-top: 80px;
+	    padding-bottom: 0px;
+    }
+
+    .order {
+	    padding-top: 0px;
+    }
+
+}
