@@ -1,0 +1,183 @@
+.direction-selector table {
+    background-color: #fafafa;
+    margin: 10px;
+    border: 1px solid olivedrab;
+    border-radius: 4px;
+}
+
+.direction-selector .operation_give {
+	/*border-right: 1px solid olivedrab;*/
+	margin: 0;
+    float:left;
+    display: table;
+    border-collapse: inherit;
+    min-width: 280px;
+    max-width: 380px;
+    /*border-top-left-radius: 15px;*/
+    /*border-bottom-left-radius: 15px;*/
+    overflow: hidden;
+}
+
+.direction-selector .give_head {
+	height: 50px;
+    font-size: 18px;
+	font-weight: bold;
+}
+
+.direction-selector .give_header {
+	height: 50px;
+	background: #ffefdb;
+}
+
+.direction-selector .give {
+	/*background: #cfcfcf;*/
+}
+
+.direction-selector img {
+	width: 30px;
+	height: 30px;
+}
+
+.direction-selector .operation_give_logo {
+	padding: 0;
+    font-size: 16px;
+}
+
+.direction-selector .operation_receive {
+	margin: 0;
+    float: right;
+    display: block;
+    min-width: 480px;
+    max-width: 660px;
+    /*border-top-right-radius: 15px;*/
+    /*border-bottom-right-radius: 15px;*/
+    overflow: hidden;
+}
+
+.direction-selector .operation_receive_head {
+	background: #ffefdb;
+}
+
+.direction-selector .operation_receive_header {
+	width: 70%;
+	height: 50px;
+	background: #ffefdb;
+	font-size:20px;
+	font-weight: bold;
+} 
+
+.direction-selector .receive {
+	width: 25%;
+	height: 48px;
+}
+
+.direction-selector .rate, .direction-selector .reserve {
+	width: 20%; 
+	height: 48px;
+}
+
+ .direction-selector .receive_table {
+	width: 70%;
+	height:48px;
+	/*background: #cfcfcf;*/
+    font-size: 16px;
+	font-weight: normal;
+} 
+
+.direction-selector a.pseudo>div {
+    float: left;
+}
+
+.direction-selector a.pseudo {
+	display: block;
+	height: 48px;
+	line-height: 48px;
+	padding: 0 6px;
+}
+
+.direction-selector a.pseudo img {
+	margin: 9px 0;
+}
+
+.direction-selector a.pseudo .pseudo__reserve__not_enough {
+    visibility: hidden;
+}
+
+.direction-selector a.pseudo:hover .pseudo__reserve__not_enough {
+    visibility: visible;
+}
+
+.direction-selector a.pseudo:hover, .direction-selector a.pseudo.active {
+	background: #faf0e6;
+    color: red;
+}  
+
+
+.direction-selector a.pseudo:hover {
+	text-decoration: none;
+}
+
+.direction-selector .pseudo__curr_name {
+    width: 244px;
+}
+
+.direction-selector .pseudo__rate {
+    width: 180px;
+}
+
+.direction-selector .pseudo__reserve {
+    width: 200px;
+}
+
+
+.direction-selector table {
+	border-spacing: 1px;
+}
+
+.pseudo__reserve__not_enough {
+    display: block;
+	float: right;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #002a80;
+}
+
+
+
+/* media:*/
+/*width: 768-992*/
+
+@media screen and (max-width: 992px) {
+  
+    .container {
+  	    width: 720px !important;
+  }
+
+    .direction-selector .operation_receive {
+	  /* margin: 20px;*/
+	   margin: 20px;
+       float: left;
+}
+
+    .direction-selector .operation_give {
+        margin: 20px;
+        float: left;
+}
+
+    .di-footer {
+    	width: 90%;
+}
+
+}
+
+
+/*wids: 300-576*/
+@media screen and (max-width: 768px) {
+
+    .di-footer {
+    	width: 85%;
+    	margin: 20px;
+    	float: left;
+    }
+
+}

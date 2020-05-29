@@ -1,0 +1,70 @@
+function message(element, message_type, message, delay) {
+//    element.find('.alert').remove();
+    var el = $('<div>', {
+        'class':'alert alert-' + message_type,
+        'style':'margin-bottom: 0; opacity: 0.95',
+        html:'<button type="button" class="close" data-dismiss="alert">×</button>' + message
+    });
+
+    element.append(el);
+    var delay_time = delay ? delay : 2000;
+    el.fadeIn('fast').delay(delay_time).fadeOut('slow');
+
+}
+
+function ru2engOnKeyPress(evt) {
+    var rus = new Array('й', 'ц', 'у', 'к', 'е', 'н', 'г', 'ш', 'щ', 'з', 'х', 'ъ', 'ф', 'ы', 'в', 'а', 'п', 'р', 'о', 'л', 'д', 'ж', 'э', 'я', 'ч', 'с', 'м', 'и', 'т', 'ь', 'б', 'ю', 'Й', 'Ц', 'У', 'К', 'Е', 'Н', 'Г', 'Ш', 'Щ', 'З', 'Х', 'Ъ', 'Ф', 'Ы', 'В', 'А', 'П', 'Р', 'О', 'Л', 'Д', 'Ж', 'Э', 'Я', 'Ч', 'С', 'М', 'И', 'Т', 'Ь', 'Б', 'Ю', ',' ,'ё', 'Ё');
+    var eng = new Array('q','w','e','r','t','y','u','i','o','p','[',']','a','s','d','f','g','h','j','k','l',';',"'",'z','x','c','v','b','n','m',',','.', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '{', '}', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ':', '"', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<', '>', '?', '`', '~');
+
+    var val = this.value;
+    evt = evt || window.event;
+
+    // Ensure we only handle printable keys, excluding enter and space
+    var charCode = typeof evt.which == "number" ? evt.which : evt.keyCode;
+    if (charCode && charCode != 13 && charCode != 32) {
+        var keyChar = String.fromCharCode(charCode);
+
+        if (keyChar.match(/[a-zA-Z0-9\+\-\_]/)) {
+            return;
+        }
+
+        // Get the mapped character
+        var charIndex = rus.indexOf(keyChar);
+        var mappedChar = eng[charIndex];
+        if (!mappedChar) {
+           return false;
+        }
+
+        var start, end;
+        if (typeof this.selectionStart == "number" && typeof this.selectionEnd == "number") {
+            // Non-IE browsers and IE 9
+            start = this.selectionStart;
+            end = this.selectionEnd;
+            this.value = val.slice(0, start) + mappedChar + val.slice(end);
+
+            // Move the caret
+            this.selectionStart = this.selectionEnd = start + 1;
+        } else if (document.selection && document.selection.createRange) {
+            // For IE up to version 8
+            var selectionRange = document.selection.createRange();
+            var textInputRange = this.createTextRange();
+            var precedingRange = this.createTextRange();
+            var bookmark = selectionRange.getBookmark();
+            textInputRange.moveToBookmark(bookmark);
+            precedingRange.setEndPoint("EndToStart", textInputRange);
+            start = precedingRange.text.length;
+            end = start + selectionRange.text.length;
+
+            this.value = val.slice(0, start) + mappedChar + val.slice(end);
+            start++;
+
+            // Move the caret
+            textInputRange = this.createTextRange();
+            textInputRange.collapse(true);
+            textInputRange.move("character", start - (this.value.slice(0, start).split("\r\n").length - 1));
+            textInputRange.select();
+        }
+
+        return false;
+    }
+}

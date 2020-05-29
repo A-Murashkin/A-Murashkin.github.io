@@ -1,0 +1,78 @@
+@font-face {
+    font-family: DinDisplay Light;
+    src: url("/assets/fnt/PFDinDisplayPro-Light.ttf");
+}
+body{
+    font-family: 'DinDisplay', sans-serif;
+    color: #757575;
+    font-weight: 200;
+}
+.content .step {
+    font-size: 15px;
+}
+.content .step-number {
+    float: left;
+    font-size: 40px;
+    color: #777777;
+    font-weight: bold;
+    line-height: 50px;
+}
+.content .title {
+    text-align: center;
+}
+.no-span3-margin {
+    margin-left: 0;
+    width: 240px;
+}
+.margin-bottom {
+    margin-bottom: 30px;
+}
+.footer-links {
+    text-align: center;
+}
+.footer-links li {
+    display: inline-block;
+    padding: 0 10px;
+}
+.ajax-message {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    z-index: 10;
+
+}
+.register-text {
+    padding: 4px 0;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.navbar .brand {
+    height: 50px;
+    width: 290px;
+    background: url("/assets/img/pb-logo.png?luck") no-repeat scroll 0% 0% transparent;
+    text-indent: -900px;
+}
+
+.counters img {
+    margin: 6px 10px;
+    opacity: 0.4;
+}
+.counters img:hover {
+    opacity: 0.9;
+}
+
+@-webkit-keyframes blinker {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+}
+.blink{
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-direction: alternate;
+}
