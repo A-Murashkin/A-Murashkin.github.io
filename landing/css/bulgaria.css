@@ -57,7 +57,7 @@ button:activ, input:focus, input:activ {
 
 
 #first {
-	background: url(img/tours11.png) no-repeat center center;
+	background: url(../img/tours11.png) no-repeat center center;
   width: 100%; 
   height: 700px;
 }
@@ -204,7 +204,7 @@ button:activ, input:focus, input:activ {
 	  float: left;
     display: inline-block;
     margin: 20px 4px 10px 0px;
-    background: url(img/elips.png) no-repeat center center/contain;
+    background: url(../img/elips.png) no-repeat center center/contain;
     width: 20px;
     height: 20px;
 }
@@ -266,7 +266,7 @@ button:activ, input:focus, input:activ {
 
 .down {
 	display: block;
-  background: url(img/elips.png) no-repeat center center/contain;
+  background: url(../img/elips.png) no-repeat center center/contain;
 	width: 45px;
 	height: 45px;
   margin: 80px auto;
@@ -298,16 +298,16 @@ button:activ, input:focus, input:activ {
 }
 
 .adv_img__authentisiti {
-	background: url(img/authentisiti.png) no-repeat center top;
+	background: url(../img/authentisiti.png) no-repeat center top;
 }
 
 
 .adv_img__reliabiliti {
-	background: url(img/reliabiliti.png) no-repeat center top;
+	background: url(../img/reliabiliti.png) no-repeat center top;
 }
 
 .adv_img__competence {
-	background: url(img/competence.png) no-repeat center top;
+	background: url(../img/competence.png) no-repeat center top;
 }
 
 .adv {
@@ -338,7 +338,7 @@ button:activ, input:focus, input:activ {
 
 
 #moving {
-	background: #30485c url(img/good-pesock.png) no-repeat center center/cover;
+	background: #30485c url(../img/good-pesock.png) no-repeat center center/cover;
   padding: 90px 0px 100px 0px;
 }
 
@@ -364,7 +364,7 @@ button:activ, input:focus, input:activ {
 } 
 
 .move_question {
-  background: url(img/rest.png) no-repeat center center;
+  background: url(../img/rest.png) no-repeat center center;
   color: #fff;
   width: 100%;
   height: 180px;
@@ -374,7 +374,7 @@ button:activ, input:focus, input:activ {
 }
 
 .circ {
-	background: url(img/elips.png) no-repeat center center/cover;
+	background: url(../img/elips.png) no-repeat center center/cover;
   width: 30px;
   height: 30px;
   z-index: 2;
@@ -408,7 +408,7 @@ button:activ, input:focus, input:activ {
 }
 
 .move_answer {
-  background: url(img/rest.png) no-repeat center center;
+  background: url(../img/rest.png) no-repeat center center;
   background-size: 70% 100%;
   width: 70% 100%;
   color: #fff;
@@ -451,7 +451,7 @@ button:activ, input:focus, input:activ {
 
 
 #property {
-  background: url(img/town.png) no-repeat center center;
+  background: url(../img/town.png) no-repeat center center;
   width: 100%;
   height: 900px;
   padding: 0px;
@@ -619,7 +619,7 @@ button:activ, input:focus, input:activ {
 
 #consultation {
 	width: 100%;
-  background: #11b2f5 url(img/confus.png) no-repeat center center;
+  background: #11b2f5 url(../img/confus.png) no-repeat center center;
   padding: 90px 0px 100px 0px;
 }
 
@@ -636,7 +636,7 @@ button:activ, input:focus, input:activ {
 }
 
 .cons_below {
-	background: url(img/elips.png) no-repeat center center/contain;
+	background: url(../img/elips.png) no-repeat center center/contain;
 	width: 35px;
 	height: 35px;
   margin: 30px auto;
@@ -704,7 +704,7 @@ button {
   float: left;
   display: inline-block;
   margin: 50px 5px;
-  background: url(img/elips.png) no-repeat center center/cover;
+  background: url(../img/elips.png) no-repeat center center/cover;
   width: 30px;
   height: 30px;
   color: #fff;
@@ -726,7 +726,7 @@ button {
 
 .up {
 	display: block;
-	background: url(img/elips.png) no-repeat center center/contain;
+	background: url(../img/elips.png) no-repeat center center/contain;
 	width: 45px;
 	height: 45px;
   margin: 10px auto 20px auto;
