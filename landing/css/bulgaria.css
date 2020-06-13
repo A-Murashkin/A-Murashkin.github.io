@@ -286,41 +286,41 @@ button:activ, input:focus, input:activ {
   padding: 80px 0px;
 }
   
-.adv_item {
+.advan_item {
   background: #f4f4f4;
   padding: 30px 10px;
   height: 340px;
   margin-bottom: 20px;
 }
 
-.adv_img {
+.advan_img {
   height: 100px;   
 }
 
-.adv_img__authentisiti {
+.advan_img__authentisiti {
 	background: url(../img/authentisiti.png) no-repeat center top;
 }
 
 
-.adv_img__reliabiliti {
+.advan_img__reliabiliti {
 	background: url(../img/reliabiliti.png) no-repeat center top;
 }
 
-.adv_img__competence {
+.advan_img__competence {
 	background: url(../img/competence.png) no-repeat center top;
 }
 
-.adv {
+#advan {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.adv_title {
+.advan_title {
 	font-size: 1.5rem;
 	margin-bottom: 10px;
 }
 
-.adv_title:after {
+.advan_title:after {
 	content: "";
 	display: block;
 	background: #cbcbcb; 
@@ -330,7 +330,7 @@ button:activ, input:focus, input:activ {
 }
 
 
-.adv_text {
+.advan_text {
 	font-size: 1.15rem;
   text-align: center;
 }
